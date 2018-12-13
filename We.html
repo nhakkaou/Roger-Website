@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LogIn</title>
+       
+        <style>
+         body {
+             background-image: url("a.png");
+            }
+         label {
+             color: aliceblue;
+         }
+         h1 {
+             color: aliceblue;
+         }
+            #ff {
+                width:300px;
+                margin: auto;         
+                margin-top: 300px;      
+            }
+            #user {
+                width: 200px;
+                height: 20px;
+                font-size: 15px;
+                border: 5px;
+            }
+            #pass {
+                width: 200px;
+                height: 20px;
+                font-size: 15px;
+                border: 5px;
+            }
+            #bot {
+                width: 100px;
+                height: 25px;
+                margin-left: 50px;
+                margin-top: 10px;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+       
+            <div class="mydiv">
+                
+                <form id="ff">
+                <h1>Sign - In</h1>    
+                <label>Username:</label><br>
+                    <input type="text" name="Username" id="user" required><br>
+                  <label>Password:</label>  <br>
+                    <input type="password" name="password" id="pass" required><br>
+                   
+                   <a href="Page.html"></a>
+                   <button name="Sign in" id="bot" type="button" onclick="javascript:validate()">Sign in</button>
+                </form>
+            </div>
+    </body>
+    <script>
+        var username = document.getElementById("user");
+        var pass = document.getElementById("pass");
+        function validate()
+        {
+            if(username.value=="1337" && pass.value=="1337")
+            {
+              location.href="file:///Users/nhakkaou/Desktop/Website/Page.html";
+            }
+            else
+            {
+                alert ("code incorrect");
+            }
+        }
+        
+    </script>
+</html>
